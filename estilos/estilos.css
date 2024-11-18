@@ -1,4 +1,97 @@
-a{
-    color: red;
-    font-size:22px;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/* FORMATAÇÃO BARRA DE NAVEGAÇÃO */
+
+#navbar{
+    margin-left: 0px;
+    position: fixed;
+    left: 0px;
+    border-bottom: 2px solid black;
+    top: 0px;
+    height: 80px;
+    width: 100%;
+    font-size: 22px;
+    line-height: 60px;
+    float: left;
+}
+
+#navbar #logo{
+    float: left;
+    position: fixed;
+    left: 70px;
+}
+
+#navbar .centro ul{
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+
+#navbar .direita ul{
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+
+#navbar .centro li{
+    list-style: none;
+    float: left;
+    position: relative;
+    left: 775px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#navbar .direita li{
+    list-style: none;
+    float: left;
+    position: relative;
+    left: 1320px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#navbar .centro li a{
+    text-decoration: none;
+    color: black; 
+    width: 100px;
+    padding: 10px;
+    display: block;
+}
+
+#navbar .direita li a{
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    padding: 10px;
+    display: block;
+}
+
+#navbar .centro li a:hover{
+    color: white;
+    background-color: black;
+    width: 100px;
+}
+
+#navbar .direita li a:hover{
+    color: white;
+    background-color: black;
+    width: 100px;
+}
+
+/* FORMATAÇAO PRINCIPAL */
+
+
+#imagem-dinamica{
+    position: fixed;
+    top: 200px;
 }
