@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estilos/formulario.css">
+</head>
+<body>
+    <div class="form">
+        <h2>
+            Cadastre-se 
+        </h2>
+        <form class="login-form">
+            <input type="text" name="nomeCompleto" placeholder="Nome completo"/>
+            <input type="text" name="pais" placeholder="País">
+            <input type="text" name="documentacao" placeholder="CPF"/>
+            <input type="date" name="dataNascimento" placeholder="Data de nascimento">
+            <input type="tel" name="telefone" placeholder="Número de telefone">
+            <input type="email" name="email" placeholder="Email"/>
+            <input type="password" name="senha" placeholder="Senha"/>
+            <input type="password" placeholder="Confirme a senha"/>
+            <button type="submit">Cadastrar</button>
+            <p class="message">Já possui uma conta? <a href="../templates/login.html">Faça login</a></p>
+        </form>
+    </div>
+    <script src="../dist/formulario.js"></script>
+</body>
+</html>

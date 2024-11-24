@@ -3,50 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-
-    <link rel="stylesheet" href="estilos/estilos.css">
-    
-    <a href="index.html">
-        <h1>Lopu</h1>
-    </a>
-
-    <h5>Servicos Automotivos</h5> 
-
-    <a href="">
-        <button>Comprar</button>
-    </a>
-
-
-    <a href="">
-        <button>Exposicao</button>
-    </a>
-
-
-    <a href="">
-        <button>Ajuda</button>
-    </a>
-
-
-    <a href="Login.html">
-        <button>Login</button>
-    </a>
-
-
-    <a href="">
-        <button>Busca</button>
-    </a>
-
+    <title>Exemplo</title>
+    <link rel="stylesheet" href="estilos/login.css">
 </head>
 <body>
-    <form> 
-        <strong>Email:</strong> <br>
-        <input type="text" name="email" > <br><br>
-        <strong>Senha:</strong> <br>
-        <input type="password" name="senha"> <br><br>
-        <input type="submit" value="Logar">
+<div class="form">
+    <img src="Imagens\logo.png" alt="logo" class="logo">
+    <form class="login-form" id="loginForm" action="../templates/home.html">
+        <input type="text" placeholder="email" required name="email" id="email"/>
+        <input type="password" placeholder="senha" required name="senha" id="senha"/>
+        <button type="submit">Entrar</button>
+        <p class="message">Não possui cadastro? <a href="../templates/formulario.html">Crie uma conta</a></p>
     </form>
-    <br>
-    <a href="Cadastro.html">Nao tem uma conta? Cadastre-se aqui</a>    
+</div>
 </body>
 </html>
