@@ -1,9 +1,16 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
+.clear{
+    clear: both;
+}
 
+#pagina{
+    position: static;
+}
 
 
 
@@ -11,7 +18,7 @@
 
 #navbar{
     margin-left: 0px;
-    position: fixed;
+    position: absolute;
     left: 0px;
     border-bottom: 2px solid black;
     top: 0px;
@@ -24,7 +31,7 @@
 
 #navbar #logo{
     float: left;
-    position: fixed;
+    position: absolute;
     left: 70px;
 }
 
@@ -32,14 +39,14 @@
     float: left;
     margin: 0;
     padding: 0;
-    position: fixed;
+    position: absolute;
 }
 
 #navbar .direita ul{
     float: left;
     margin: 0;
     padding: 0;
-    position: fixed;
+    position: absolute;
 }
 
 #navbar .centro li{
@@ -90,8 +97,68 @@
 
 /* FORMATAÇAO PRINCIPAL */
 
+#frase{
+    float: left;
+    position: absolute;
+    top: 125px;
+    left: 725px;
+    color: rgb(102, 102, 102);
+}
 
-#imagem-dinamica{
-    position: fixed;
+#aba-esquerda{
+    position: absolute;
     top: 200px;
+    right: 700px;
+}
+
+#aba-esquerda img{
+    border-radius: 50px;
+}
+
+#aba-direita1{
+    float: right;
+    list-style: none;
+    position: absolute;
+    top: 200px;
+    right: 275px;
+}
+
+#aba-direita1 a{
+    text-decoration: none;
+}
+
+#aba-direita1 img{
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 3px 3px gray;
+}
+
+#aba-direita2{
+    float: right;
+    list-style: none;
+    position: absolute;
+    top: 200px;
+    right: 75px;
+}
+
+#aba-direita2 a{
+    text-decoration: none;
+}
+
+#aba-direita2 img{
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 3px 3px gray;
+}
+
+.lista-de-carros li{
+    list-style: none;
+}
+
+.lista-de-carros button{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-top: 30px;
+    margin-right: 10px;
 }
