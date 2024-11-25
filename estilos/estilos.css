@@ -1,7 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     font-family: "DejaVu Sans Mono", monospace
+=======
+    font-family: 'Times New Roman', Times, serif;
+>>>>>>> 3479dda630acbabeca4021c5a44501fdf9bffe76
 }
 
 .clear{
@@ -101,19 +105,31 @@
     float: left;
     position: absolute;
     top: 125px;
+<<<<<<< HEAD
     left: 680px;
+=======
+    left: 725px;
+>>>>>>> 3479dda630acbabeca4021c5a44501fdf9bffe76
     color: rgb(102, 102, 102);
 }
 
 #aba-esquerda{
     position: absolute;
     top: 200px;
+<<<<<<< HEAD
     right: 650px;
 }
 
 #aba-esquerda #imagem-dinamica img{
     border-radius: 40px;
     border: 3px solid black;
+=======
+    right: 700px;
+}
+
+#aba-esquerda img{
+    border-radius: 50px;
+>>>>>>> 3479dda630acbabeca4021c5a44501fdf9bffe76
 }
 
 #aba-direita1{
@@ -154,10 +170,17 @@
 
 .lista-de-carros li{
     list-style: none;
+<<<<<<< HEAD
+=======
+}
+
+.lista-de-carros button{
+>>>>>>> 3479dda630acbabeca4021c5a44501fdf9bffe76
     width: 100px;
     height: 100px;
     float: left;
     margin-top: 30px;
+<<<<<<< HEAD
     margin-right: 200px;
 }
 
@@ -179,3 +202,7 @@
 .lista-de-carros a img{
     margin-top: 30px;
 }
+=======
+    margin-right: 10px;
+}
+>>>>>>> 3479dda630acbabeca4021c5a44501fdf9bffe76
