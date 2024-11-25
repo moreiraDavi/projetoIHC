@@ -1,9 +1,16 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "DejaVu Sans Mono", monospace
 }
 
+.clear{
+    clear: both;
+}
 
+#pagina{
+    position: static;
+}
 
 
 
@@ -11,7 +18,7 @@
 
 #navbar{
     margin-left: 0px;
-    position: fixed;
+    position: absolute;
     left: 0px;
     border-bottom: 2px solid black;
     top: 0px;
@@ -24,7 +31,7 @@
 
 #navbar #logo{
     float: left;
-    position: fixed;
+    position: absolute;
     left: 70px;
 }
 
@@ -32,21 +39,21 @@
     float: left;
     margin: 0;
     padding: 0;
-    position: fixed;
+    position: absolute;
 }
 
 #navbar .direita ul{
     float: left;
     margin: 0;
     padding: 0;
-    position: fixed;
+    position: absolute;
 }
 
 #navbar .centro li{
     list-style: none;
     float: left;
     position: relative;
-    left: 775px;
+    left: 675px;
     text-align: center;
     font-weight: 500;
 }
@@ -55,7 +62,7 @@
     list-style: none;
     float: left;
     position: relative;
-    left: 1320px;
+    left: 1065px;
     text-align: center;
     font-weight: 500;
 }
@@ -63,7 +70,7 @@
 #navbar .centro li a{
     text-decoration: none;
     color: black; 
-    width: 100px;
+    width: 120px;
     padding: 10px;
     display: block;
 }
@@ -71,7 +78,7 @@
 #navbar .direita li a{
     text-decoration: none;
     color: black;
-    width: 100px;
+    width: 120px;
     padding: 10px;
     display: block;
 }
@@ -79,19 +86,96 @@
 #navbar .centro li a:hover{
     color: white;
     background-color: black;
-    width: 100px;
+    width: 120px;
 }
 
 #navbar .direita li a:hover{
     color: white;
     background-color: black;
-    width: 100px;
+    width: 120px;
 }
 
 /* FORMATAÇAO PRINCIPAL */
 
+#frase{
+    float: left;
+    position: absolute;
+    top: 125px;
+    left: 680px;
+    color: rgb(102, 102, 102);
+}
 
-#imagem-dinamica{
-    position: fixed;
+#aba-esquerda{
+    position: absolute;
     top: 200px;
+    right: 650px;
+}
+
+#aba-esquerda #imagem-dinamica img{
+    border-radius: 40px;
+    border: 3px solid black;
+}
+
+#aba-direita1{
+    float: right;
+    list-style: none;
+    position: absolute;
+    top: 200px;
+    right: 275px;
+}
+
+#aba-direita1 a{
+    text-decoration: none;
+}
+
+#aba-direita1 img{
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 3px 3px gray;
+}
+
+#aba-direita2{
+    float: right;
+    list-style: none;
+    position: absolute;
+    top: 200px;
+    right: 75px;
+}
+
+#aba-direita2 a{
+    text-decoration: none;
+}
+
+#aba-direita2 img{
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 3px 3px gray;
+}
+
+.lista-de-carros li{
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-top: 30px;
+    margin-right: 200px;
+}
+
+.lista-de-carros a{
+    width: 250px;
+    height: 300px;
+    float: left;
+    margin-top: 30px;
+    margin-right: 70px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 0.7em;
+    background: black;
+}
+
+.lista-de-carros a img{
+    margin-top: 30px;
 }
