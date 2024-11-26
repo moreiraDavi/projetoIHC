@@ -1,28 +1,41 @@
-*{
+* {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
     font-family: "DejaVu Sans Mono", monospace
-=======
-    font-family: 'Times New Roman', Times, serif;
->>>>>>> 3479dda630acbabeca4021c5a44501fdf9bffe76
 }
 
-.clear{
+body{
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
     clear: both;
 }
 
-#pagina{
-    position: static;
+#pagina {
+    flex: 1;
+    overflow: hidden;
+}
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    height: 500px;
+    flex: 2;
 }
 
 
 
 /* FORMATAÇÃO BARRA DE NAVEGAÇÃO */
 
-#navbar{
+#navbar {
     margin-left: 0px;
-    position: absolute;
+    position: fixed;
     left: 0px;
     border-bottom: 2px solid black;
     top: 0px;
@@ -31,29 +44,31 @@
     font-size: 22px;
     line-height: 60px;
     float: left;
+    z-index: 9998;
+    background: white;
 }
 
-#navbar #logo{
+#navbar #logo {
     float: left;
     position: absolute;
     left: 70px;
 }
 
-#navbar .centro ul{
+#navbar .centro ul {
     float: left;
     margin: 0;
     padding: 0;
     position: absolute;
 }
 
-#navbar .direita ul{
+#navbar .direita ul {
     float: left;
     margin: 0;
     padding: 0;
     position: absolute;
 }
 
-#navbar .centro li{
+#navbar .centro li {
     list-style: none;
     float: left;
     position: relative;
@@ -62,7 +77,7 @@
     font-weight: 500;
 }
 
-#navbar .direita li{
+#navbar .direita li {
     list-style: none;
     float: left;
     position: relative;
@@ -71,15 +86,7 @@
     font-weight: 500;
 }
 
-#navbar .centro li a{
-    text-decoration: none;
-    color: black; 
-    width: 120px;
-    padding: 10px;
-    display: block;
-}
-
-#navbar .direita li a{
+#navbar .centro li a {
     text-decoration: none;
     color: black;
     width: 120px;
@@ -87,13 +94,21 @@
     display: block;
 }
 
-#navbar .centro li a:hover{
+#navbar .direita li a {
+    text-decoration: none;
+    color: black;
+    width: 120px;
+    padding: 10px;
+    display: block;
+}
+
+#navbar .centro li a:hover {
     color: white;
     background-color: black;
     width: 120px;
 }
 
-#navbar .direita li a:hover{
+#navbar .direita li a:hover {
     color: white;
     background-color: black;
     width: 120px;
@@ -101,38 +116,37 @@
 
 /* FORMATAÇAO PRINCIPAL */
 
-#frase{
+#frase {
     float: left;
     position: absolute;
     top: 125px;
-<<<<<<< HEAD
-    left: 680px;
-=======
-    left: 725px;
->>>>>>> 3479dda630acbabeca4021c5a44501fdf9bffe76
+    left: 350px;
     color: rgb(102, 102, 102);
 }
 
-#aba-esquerda{
+#frase h2 {
+    font-weight: 500;
+}
+
+#aba-esquerda {
     position: absolute;
     top: 200px;
-<<<<<<< HEAD
     right: 650px;
 }
 
-#aba-esquerda #imagem-dinamica img{
+#aba-esquerda #imagem-dinamica img {
     border-radius: 40px;
-    border: 3px solid black;
-=======
-    right: 700px;
+    border: 3px solid rgba(0, 0, 0, 0.547);
 }
 
-#aba-esquerda img{
-    border-radius: 50px;
->>>>>>> 3479dda630acbabeca4021c5a44501fdf9bffe76
+#aba-direita {
+    position: fixed;
+    float: right;
+    right: 40px;
+    bottom: 1010px;
 }
 
-#aba-direita1{
+#aba-direita1 {
     float: right;
     list-style: none;
     position: absolute;
@@ -140,17 +154,17 @@
     right: 275px;
 }
 
-#aba-direita1 a{
+#aba-direita1 a {
     text-decoration: none;
 }
 
-#aba-direita1 img{
+#aba-direita1 img {
     padding: 10px;
     margin-bottom: 10px;
     box-shadow: 3px 3px 3px 3px gray;
 }
 
-#aba-direita2{
+#aba-direita2 {
     float: right;
     list-style: none;
     position: absolute;
@@ -158,51 +172,94 @@
     right: 75px;
 }
 
-#aba-direita2 a{
+#aba-direita2 a {
     text-decoration: none;
 }
 
-#aba-direita2 img{
+#aba-direita2 img {
     padding: 10px;
     margin-bottom: 10px;
     box-shadow: 3px 3px 3px 3px gray;
 }
 
-.lista-de-carros li{
+.lista-de-carros li {
     list-style: none;
-<<<<<<< HEAD
-=======
-}
-
-.lista-de-carros button{
->>>>>>> 3479dda630acbabeca4021c5a44501fdf9bffe76
     width: 100px;
     height: 100px;
     float: left;
     margin-top: 30px;
-<<<<<<< HEAD
     margin-right: 200px;
 }
 
-.lista-de-carros a{
+.lista-de-carros a {
     width: 250px;
-    height: 300px;
+    height: 375px;
     float: left;
     margin-top: 30px;
     margin-right: 70px;
-    border: 1px solid black;
+    border: 3px solid rgba(0, 0, 0, 0.547);
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
-    color: white;
-    font-size: 0.7em;
-    background: black;
+    color: black;
 }
 
-.lista-de-carros a img{
-    margin-top: 30px;
+.lista-de-carros a img {
+    margin: 0px;
+    width: 250px;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+    left: 0px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.547);
 }
-=======
-    margin-right: 10px;
+
+.lista-de-carros a h2 {
+    font-weight: 100;
+    margin-left: 5px;
+    margin-top: 5px;
 }
->>>>>>> 3479dda630acbabeca4021c5a44501fdf9bffe76
+
+.lista-de-carros a .especificacoes {
+    margin-left: 5px;
+    margin-top: 5px;
+    font-weight: 100px;
+    color: rgba(0, 0, 0, 0.547);
+}
+
+.lista-de-carros a .preco {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-weight: 100px;
+    color: black;
+    font-size: 1.6em;
+}
+
+.lista-de-carros a h4 {
+
+    font-weight: 100px;
+    color: rgba(0, 0, 0, 0.547);
+}
+
+.ano {
+    display: inline-block;
+    width: 125px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.quilometragem {
+    margin-top: 20px;
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+.ano h4 {
+    display: inline;
+}
+
+.quilometragem h4 {
+    display: inline;
+}
