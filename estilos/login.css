@@ -3,7 +3,7 @@
 body {
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "DejaVu Sans Mono", monospace;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,8 +12,7 @@ body {
 }
 
 .logo {
-    width: 140px;
-    height: 110px;
+    height: 70px;
     margin-bottom: 25px;
 }
 
@@ -30,7 +29,7 @@ body {
 }
 
 .form input {
-    font-family: "Roboto", sans-serif;
+    font-family: "DejaVu Sans Mono", monospace;
     outline: 0;
     background: #f2f2f2;
     width: 100%;
@@ -43,7 +42,7 @@ body {
 }
 
 .form button {
-    font-family: "Roboto", sans-serif;
+    font-family: "DejaVu Sans Mono", monospace;
     text-transform: uppercase;
     outline: 0;
     background: #42c436;

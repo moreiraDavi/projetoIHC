@@ -1,20 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: "DejaVu Sans Mono", monospace
+    font-family: "DejaVu Sans Mono", monospace;
 }
-
-.clear{
-    clear: both;
-}
-
-#pagina{
-    position: static;
-}
-
-
-
-/* FORMATAÇÃO BARRA DE NAVEGAÇÃO */
 
 #navbar {
     margin-left: 0px;
@@ -97,57 +85,48 @@
     width: 120px;
 }
 
-h1{
-    text-align: center;
+#area-do-meio{
+    height:auto;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    align-items: center;
+    padding: auto;
 }
 
-h2{
-    text-align:left ;
-    margin: 40px;
-
-}
-
-#container{
-    margin: 40px;
-    font-size: 15px;
+.postagem{
     display: flex;
-    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    height: 1100px;
+    width: 75%;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    margin-top: 0px;
+
 }
 
-#container2{
-    margin: 40px;
-    font-size: 15px;
-    display: flex;
-    justify-content: space-around;
-
-}
-
-#container3{
-    margin: 40px;
-    font-size: 15px;
-    display: flex;
-    justify-content: space-around;
-}
-
-#texto {
-    width: 400px;
-    height: 50px;
-}
-
-#contato{
-    text-align: center;
-    margin-top: 20px;
-}
-
-#footer {
-    background-color: #333; /* Personalize como preferir */
-    color: #fff;
-    text-align: center;
+.postagem .perfil{
+    text-align: left;
     padding: 20px;
-    height: 1px;
-    position: absolute;
-    top: 860px;
-    width: 100%;
-    line-height: 1px;
 }
+
+.postagem .imagem-principal{
+    width: auto;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.icones{
+    display: block;
+    height: 150px;
+}
+
+.icones h2{
+    margin: 10px;
+}
+
 
