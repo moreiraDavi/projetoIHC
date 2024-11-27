@@ -4,31 +4,34 @@
     font-family: "DejaVu Sans Mono", monospace
 }
 
-body{
-    display: flex;
-    flex-direction: column; 
-    min-height: 100vh;
-}
-
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 #pagina {
-    flex: 1;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que cobre a tela inteira */
 }
 
 #footer {
-    background-color: #333;
+    background-color: #333; /* Personalize como preferir */
     color: #fff;
     text-align: center;
-    height: 500px;
+    padding: 20px;
+    height: 1px;
     position: absolute;
-    top: 2700px;
+    top: 2600px;
     width: 100%;
+    line-height: 1px;
 }
 
 
@@ -130,10 +133,16 @@ body{
     font-weight: 500;
 }
 
+#conteudo-principal{
+    display: flex;
+    margin-bottom: 100px;
+}
+
 #aba-esquerda {
     position: absolute;
     top: 200px;
     right: 650px;
+    flex:3;
 }
 
 #aba-esquerda #imagem-dinamica img {
@@ -145,7 +154,8 @@ body{
     position: fixed;
     float: right;
     right: 40px;
-    bottom: 1010px;
+    bottom: 985px;
+    flex: 1;
 }
 
 #aba-direita1 {
