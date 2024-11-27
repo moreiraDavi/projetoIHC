@@ -52,7 +52,7 @@
     list-style: none;
     float: left;
     position: relative;
-    left: 1065px;
+    left: 1205px;
     text-align: center;
     font-weight: 500;
 }
@@ -111,6 +111,7 @@
 
 .postagem .perfil{
     text-align: left;
+    font-weight: 200;
     padding: 20px;
 }
 
@@ -127,6 +128,7 @@
 
 .icones h2{
     margin: 10px;
+    font-weight: 200;
 }
 
 
