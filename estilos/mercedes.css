@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "DejaVu Sans Mono", monospace;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#pagina {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que cobre a tela inteira */
+}
+
+#footer {
+    background-color: #333; /* Personalize como preferir */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    height: 1px;
+    position: absolute;
+    top: 2600px;
+    width: 100%;
+    line-height: 1px;
+}
+
+
+
+/* FORMATAÇÃO BARRA DE NAVEGAÇÃO */
+
+#navbar {
+    margin-left: 0px;
+    position: fixed;
+    left: 0px;
+    border-bottom: 2px solid black;
+    top: 0px;
+    height: 80px;
+    width: 100%;
+    font-size: 22px;
+    line-height: 60px;
+    float: left;
+    z-index: 9998;
+    background: white;
+}
+
+#navbar #logo {
+    float: left;
+    position: absolute;
+    left: 70px;
+}
+
+#navbar .centro ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+#navbar .direita ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+#navbar .centro li {
+    list-style: none;
+    float: left;
+    position: relative;
+    left: 675px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#navbar .direita li {
+    list-style: none;
+    float: left;
+    position: relative;
+    left: 1065px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#navbar .centro li a {
+    text-decoration: none;
+    color: black;
+    width: 120px;
+    padding: 10px;
+    display: block;
+}
+
+#navbar .direita li a {
+    text-decoration: none;
+    color: black;
+    width: 120px;
+    padding: 10px;
+    display: block;
+}
+
+#navbar .centro li a:hover {
+    color: white;
+    background-color: black;
+    width: 120px;
+}
+
+#navbar .direita li a:hover {
+    color: white;
+    background-color: black;
+    width: 120px;
+}
+
+/* FORMATAÇAO PRINCIPAL */
+
+#frase {
+    float: left;
+    position: absolute;
+    top: 125px;
+    left: 350px;
+    color: rgb(102, 102, 102);
+}
+
+#frase h2 {
+    font-weight: 500;
+}
+
+#conteudo-principal{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+#aba-esquerda {
+    position: absolute;
+    top: 200px;
+    right: 650px;
+    flex:3;
+}
+
+#aba-esquerda #imagem-dinamica img {
+    border-radius: 40px;
+    border: 3px solid rgba(0, 0, 0, 0.547);
+}
+
+#aba-direita {
+    position: fixed;
+    float: right;
+    right: 40px;
+    bottom: 980px;
+    flex: 1;
+}
+
+#aba-direita1 {
+    float: right;
+    list-style: none;
+    position: absolute;
+    top: 200px;
+    right: 275px;
+}
+
+#aba-direita1 a {
+    text-decoration: none;
+}
+
+#aba-direita1 img {
+    padding: 6px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 3px 3px gray;
+}
+
+#aba-direita2 {
+    float: right;
+    list-style: none;
+    position: absolute;
+    top: 200px;
+    right: 75px;
+}
+
+#aba-direita2 a {
+    text-decoration: none;
+}
+
+#aba-direita2 img {
+    padding: 6px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 3px 3px gray;
+}
+
+.lista-de-carros li {
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-top: 30px;
+    margin-right: 200px;
+}
+
+.lista-de-carros a {
+    width: 250px;
+    height: 375px;
+    float: left;
+    margin-top: 30px;
+    margin-right: 70px;
+    border: 3px solid rgba(0, 0, 0, 0.547);
+    border-radius: 10px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+.lista-de-carros a img {
+    margin: 0px;
+    width: 250px;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+    left: 0px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.547);
+}
+
+.lista-de-carros a h2 {
+    font-weight: 100;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.lista-de-carros a .especificacoes {
+    margin-left: 5px;
+    margin-top: 5px;
+    font-weight: 100px;
+    color: rgba(0, 0, 0, 0.547);
+}
+
+.lista-de-carros a .preco {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-weight: 100px;
+    color: black;
+    font-size: 1.6em;
+}
+
+.lista-de-carros a h4 {
+
+    font-weight: 100px;
+    color: rgba(0, 0, 0, 0.547);
+}
+
+.ano {
+    display: inline-block;
+    width: 125px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.quilometragem {
+    margin-top: 20px;
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+.ano h4 {
+    display: inline;
+}
+
+.quilometragem h4 {
+    display: inline;
+}

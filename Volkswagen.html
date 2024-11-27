@@ -1,125 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volkswagen</title>
+    <title>Lopu</title>
 
-    <link rel="stylesheet" href="estilos/estilos.css">
-    
-    <a href="index.html">
-        <h1>Lopu</h1>
-    </a>
+    <link rel="stylesheet" href="estilos/volks.css">
 
-    <h5>Servicos Automotivos</h5> 
-    
-    <a href="">
-        <button>Comprar</button>
-    </a>
-
-
-    <a href="">
-        <button>Exposicao</button>
-    </a>
-
-
-    <a href="">
-        <button>Ajuda</button>
-    </a>
-
-
-    <a href="Login.html">
-        <button>Login</button>
-    </a>
-
-
-    <a href="">
-        <button>Busca</button>
-    </a>
 </head>
+
 <body>
+<div id="pagina">
+    <div id="navbar"> <!-- BARRA DE NAVEGAÇÃO -->
 
-    <p>A melhor escolha para você que ama automóveis</p>
+        <div>
+            <a href="index.html">
+                <img id="logo" src="Imagens/logo.png" alt="" height="70px">
+            </a>
+        </div>
 
+        <ul class="centro">
+            <li><a href="visualizar.html">Visualizar</a></li>
+            <li><a href="index.html">Comprar</a></li>
+            <li><a href="anunciar.html">Anunciar</a></li>
+            <li><a href="ajuda.html">Ajuda</a></li>
+        </ul>
 
-    <img src="Imagens/carrosantigos2.webp" alt="Carros Antigos" width="750" height="349" >
-
-    <div>
-        <h4>Marcas</h4>
-
-        <a href="Volkswagen.html">
-            <button>
-                <img src="Imagens/icons8-volkswagen-144.png" alt="Icone Volkswagen" height="144" width="144">
-            </button>
-        </a>
-
-
-        <a href="">
-            <button>
-                <img src="Imagens/icons8-mitsubishi-150.png" alt="Icone Mitsubishi" height="144" width="144">
-            </button>
-        </a>
-
-
-        <a href="">
-            <button>
-                <img src="Imagens/icons8-bmw-144.png" alt="Icone BMW" height="144" width="144">
-            </button>
-        </a>
-
-
-        <a href="">
-            <button>
-                <img src="Imagens/icons8-peugeot-150.png" alt="Icone Peugeot" height="144" width="144">
-            </button>
-        </a>
-
-
-        <a href="">
-            <button>
-                <img src="Imagens/icons8-ford-144.png" alt="Icone Ford" height="144" width="144">
-            </button>
-        </a>
-
-
-        <a href="Mercedes.html">
-            <button>
-                <img src="Imagens/icons8-mercedes-144.png" alt="Icone Mercedes" height="144" width="144">
-            </button>
-        </a>
-
-
-        <a href="">
-            <button>
-                <img src="Imagens/icons8-chevrolet-144.png" alt="Icone Chevrolet" height="144" width="144">
-            </button>
-        </a>
-
-
-        <a href="">
-            <button>
-                <img src="Imagens/icons8-fiat-144.png" alt="Icone Volkswagen" height="144" width="144">
-            </button>
-        </a>
-
+        <ul class="direita">
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="">Busca</a></li>
+        </ul>
     </div>
 
-    <br>
-    <hr>
+    <!-- FIM DA BARRA DE NAVEGAÇÃO -->
 
-    <div>
-        <button>
-            <p></p>
-            <p></p>
-            <p></p>
 
-        </button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
+    <!-- PRINCIPAL -->
+
+    <div id="frase"> <!--FRASE-->
+        <h2>A melhor escolha para você que ama carros!</h2>
     </div>
+
+    <div class="conteudo-principal">
+        <div id="aba-esquerda"> <!--COMEÇO ABA DA ESQUERDA-->
+
+            <div id="imagem-dinamica">
+                <img src="Imagens/carros antigos.jpg" alt="" width="1150px" height="600px">
+            </div>
+
+            <ul class="lista-de-carros"> <!--COMEÇO DE LINHA DE CARROS-->
+                <li>
+                    <a href=""><!--IMAGEM-->
+                        <img src="Imagens/camaro1970.avif" alt="">
+                        <div>
+                            <div><!--NOME-->
+                                <h2 class="nome">Camaro 1970</h2>
+                            </div>
+                            <div><!--ESPECIFICAÇÕES-->
+                                <h3 class="especificacoes">2.0 Turbo Completo</h3>
+                            </div>
+                            <div> <!--PREÇO-->
+                                <h3 class="preco">R$ 70.000</h3>
+                            </div>
+                            <div class="ano"><!--ANO-->
+                                <h4>1970/1971</h4>
+                            </div>
+                            <div class="quilometragem"><!--QUILOMETRAGEM-->
+                                <h4>500.000km</h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><!--IMAGEM-->
+                        <img src="Imagens/camaro1970.avif" alt="">
+                        <div>
+                            <div><!--NOME-->
+                                <h2 class="nome">Camaro 1970</h2>
+                            </div>
+                            <div><!--ESPECIFICAÇÕES-->
+                                <h3 class="especificacoes">2.0 Turbo Completo</h3>
+                            </div>
+                            <div> <!--PREÇO-->
+                                <h3 class="preco">R$ 70.000</h3>
+                            </div>
+                            <div class="ano"><!--ANO-->
+                                <h4>1970/1971</h4>
+                            </div>
+                            <div class="quilometragem"><!--QUILOMETRAGEM-->
+                                <h4>500.000km</h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><!--IMAGEM-->
+                        <img src="Imagens/camaro1970.avif" alt="">
+                        <div>
+                            <div><!--NOME-->
+                                <h2 class="nome">Camaro 1970</h2>
+                            </div>
+                            <div><!--ESPECIFICAÇÕES-->
+                                <h3 class="especificacoes">2.0 Turbo Completo</h3>
+                            </div>
+                            <div> <!--PREÇO-->
+                                <h3 class="preco">R$ 70.000</h3>
+                            </div>
+                            <div class="ano"><!--ANO-->
+                                <h4>1970/1971</h4>
+                            </div>
+                            <div class="quilometragem"><!--QUILOMETRAGEM-->
+                                <h4>500.000km</h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><!--IMAGEM-->
+                        <img src="Imagens/camaro1970.avif" alt="">
+                        <div>
+                            <div><!--NOME-->
+                                <h2 class="nome">Camaro 1970</h2>
+                            </div>
+                            <div><!--ESPECIFICAÇÕES-->
+                                <h3 class="especificacoes">2.0 Turbo Completo</h3>
+                            </div>
+                            <div> <!--PREÇO-->
+                                <h3 class="preco">R$ 70.000</h3>
+                            </div>
+                            <div class="ano"><!--ANO-->
+                                <h4>1970/1971</h4>
+                            </div>
+                            <div class="quilometragem"><!--QUILOMETRAGEM-->
+                                <h4>500.000km</h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul> <!--FIM DE LINHA DE CARROS-->
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <ul class="lista-de-carros"> <!--COMEÇO DE LINHA DE CARROS-->
+                <li>
+                    <a href=""><!--IMAGEM-->
+                        <img src="Imagens/camaro1970.avif" alt="">
+                        <div>
+                            <div><!--NOME-->
+                                <h2 class="nome">Camaro 1970</h2>
+                            </div>
+                            <div><!--ESPECIFICAÇÕES-->
+                                <h3 class="especificacoes">2.0 Turbo Completo</h3>
+                            </div>
+                            <div> <!--PREÇO-->
+                                <h3 class="preco">R$ 70.000</h3>
+                            </div>
+                            <div class="ano"><!--ANO-->
+                                <h4>1970/1971</h4>
+                            </div>
+                            <div class="quilometragem"><!--QUILOMETRAGEM-->
+                                <h4>500.000km</h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><!--IMAGEM-->
+                        <img src="Imagens/camaro1970.avif" alt="">
+                        <div>
+                            <div><!--NOME-->
+                                <h2 class="nome">Camaro 1970</h2>
+                            </div>
+                            <div><!--ESPECIFICAÇÕES-->
+                                <h3 class="especificacoes">2.0 Turbo Completo</h3>
+                            </div>
+                            <div> <!--PREÇO-->
+                                <h3 class="preco">R$ 70.000</h3>
+                            </div>
+                            <div class="ano"><!--ANO-->
+                                <h4>1970/1971</h4>
+                            </div>
+                            <div class="quilometragem"><!--QUILOMETRAGEM-->
+                                <h4>500.000km</h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><!--IMAGEM-->
+                        <img src="Imagens/camaro1970.avif" alt="">
+                        <div>
+                            <div><!--NOME-->
+                                <h2 class="nome">Camaro 1970</h2>
+                            </div>
+                            <div><!--ESPECIFICAÇÕES-->
+                                <h3 class="especificacoes">2.0 Turbo Completo</h3>
+                            </div>
+                            <div> <!--PREÇO-->
+                                <h3 class="preco">R$ 70.000</h3>
+                            </div>
+                            <div class="ano"><!--ANO-->
+                                <h4>1970/1971</h4>
+                            </div>
+                            <div class="quilometragem"><!--QUILOMETRAGEM-->
+                                <h4>500.000km</h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><!--IMAGEM-->
+                        <img src="Imagens/camaro1970.avif" alt="">
+                        <div>
+                            <div><!--NOME-->
+                                <h2 class="nome">Camaro 1970</h2>
+                            </div>
+                            <div><!--ESPECIFICAÇÕES-->
+                                <h3 class="especificacoes">2.0 Turbo Completo</h3>
+                            </div>
+                            <div> <!--PREÇO-->
+                                <h3 class="preco">R$ 70.000</h3>
+                            </div>
+                            <div class="ano"><!--ANO-->
+                                <h4>1970/1971</h4>
+                            </div>
+                            <div class="quilometragem"><!--QUILOMETRAGEM-->
+                                <h4>500.000km</h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul> <!--FIM DE LINHA DE CARROS-->
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <ul class="lista-de-carros"> <!--COMEÇO DE LINHA DE CARROS-->
+                <li>
+                    <a href=""><!--IMAGEM-->
+                        <img src="Imagens/camaro1970.avif" alt="">
+                        <div>
+                            <div><!--NOME-->
+                                <h2 class="nome">Camaro 1970</h2>
+                            </div>
+                            <div><!--ESPECIFICAÇÕES-->
+                                <h3 class="especificacoes">2.0 Turbo Completo</h3>
+                            </div>
+                            <div> <!--PREÇO-->
+                                <h3 class="preco">R$ 70.000</h3>
+                            </div>
+                            <div class="ano"><!--ANO-->
+                                <h4>1970/1971</h4>
+                            </div>
+                            <div class="quilometragem"><!--QUILOMETRAGEM-->
+                                <h4>500.000km</h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><!--IMAGEM-->
+                        <img src="Imagens/camaro1970.avif" alt="">
+                        <div>
+                            <div><!--NOME-->
+                                <h2 class="nome">Camaro 1970</h2>
+                            </div>
+                            <div><!--ESPECIFICAÇÕES-->
+                                <h3 class="especificacoes">2.0 Turbo Completo</h3>
+                            </div>
+                            <div> <!--PREÇO-->
+                                <h3 class="preco">R$ 70.000</h3>
+                            </div>
+                            <div class="ano"><!--ANO-->
+                                <h4>1970/1971</h4>
+                            </div>
+                            <div class="quilometragem"><!--QUILOMETRAGEM-->
+                                <h4>500.000km</h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><!--IMAGEM-->
+                        <img src="Imagens/camaro1970.avif" alt="">
+                        <div>
+                            <div><!--NOME-->
+                                <h2 class="nome">Camaro 1970</h2>
+                            </div>
+                            <div><!--ESPECIFICAÇÕES-->
+                                <h3 class="especificacoes">2.0 Turbo Completo</h3>
+                            </div>
+                            <div> <!--PREÇO-->
+                                <h3 class="preco">R$ 70.000</h3>
+                            </div>
+                            <div class="ano"><!--ANO-->
+                                <h4>1970/1971</h4>
+                            </div>
+                            <div class="quilometragem"><!--QUILOMETRAGEM-->
+                                <h4>500.000km</h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><!--IMAGEM-->
+                        <img src="Imagens/camaro1970.avif" alt="">
+                        <div>
+                            <div><!--NOME-->
+                                <h2 class="nome">Camaro 1970</h2>
+                            </div>
+                            <div><!--ESPECIFICAÇÕES-->
+                                <h3 class="especificacoes">2.0 Turbo Completo</h3>
+                            </div>
+                            <div> <!--PREÇO-->
+                                <h3 class="preco">R$ 70.000</h3>
+                            </div>
+                            <div class="ano"><!--ANO-->
+                                <h4>1970/1971</h4>
+                            </div>
+                            <div class="quilometragem"><!--QUILOMETRAGEM-->
+                                <h4>500.000km</h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul> <!--FIM DE LINHA DE CARROS-->
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <ul class="lista-de-carros"> <!--COMEÇO DE LINHA DE CARROS-->
+                <li>
+                    <a href=""><!--IMAGEM-->
+                        <img src="Imagens/camaro1970.avif" alt="">
+                        <div>
+                            <div><!--NOME-->
+                                <h2 class="nome">Camaro 1970</h2>
+                            </div>
+                            <div><!--ESPECIFICAÇÕES-->
+                                <h3 class="especificacoes">2.0 Turbo Completo</h3>
+                            </div>
+                            <div> <!--PREÇO-->
+                                <h3 class="preco">R$ 70.000</h3>
+                            </div>
+                            <div class="ano"><!--ANO-->
+                                <h4>1970/1971</h4>
+                            </div>
+                            <div class="quilometragem"><!--QUILOMETRAGEM-->
+                                <h4>500.000km</h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><!--IMAGEM-->
+                        <img src="Imagens/camaro1970.avif" alt="">
+                        <div>
+                            <div><!--NOME-->
+                                <h2 class="nome">Camaro 1970</h2>
+                            </div>
+                            <div><!--ESPECIFICAÇÕES-->
+                                <h3 class="especificacoes">2.0 Turbo Completo</h3>
+                            </div>
+                            <div> <!--PREÇO-->
+                                <h3 class="preco">R$ 70.000</h3>
+                            </div>
+                            <div class="ano"><!--ANO-->
+                                <h4>1970/1971</h4>
+                            </div>
+                            <div class="quilometragem"><!--QUILOMETRAGEM-->
+                                <h4>500.000km</h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><!--IMAGEM-->
+                        <img src="Imagens/camaro1970.avif" alt="">
+                        <div>
+                            <div><!--NOME-->
+                                <h2 class="nome">Camaro 1970</h2>
+                            </div>
+                            <div><!--ESPECIFICAÇÕES-->
+                                <h3 class="especificacoes">2.0 Turbo Completo</h3>
+                            </div>
+                            <div> <!--PREÇO-->
+                                <h3 class="preco">R$ 70.000</h3>
+                            </div>
+                            <div class="ano"><!--ANO-->
+                                <h4>1970/1971</h4>
+                            </div>
+                            <div class="quilometragem"><!--QUILOMETRAGEM-->
+                                <h4>500.000km</h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><!--IMAGEM-->
+                        <img src="Imagens/camaro1970.avif" alt="">
+                        <div>
+                            <div><!--NOME-->
+                                <h2 class="nome">Camaro 1970</h2>
+                            </div>
+                            <div><!--ESPECIFICAÇÕES-->
+                                <h3 class="especificacoes">2.0 Turbo Completo</h3>
+                            </div>
+                            <div> <!--PREÇO-->
+                                <h3 class="preco">R$ 70.000</h3>
+                            </div>
+                            <div class="ano"><!--ANO-->
+                                <h4>1970/1971</h4>
+                            </div>
+                            <div class="quilometragem"><!--QUILOMETRAGEM-->
+                                <h4>500.000km</h4>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul> <!--FIM DE LINHA DE CARROS-->
+
+        </div> <!--FIM ABA DA ESQUERDA-->
+
+        <div id="aba-direita"><!--ABA DA DIREITA-->
+            <ul id="aba-direita1">
+                <li>
+                    <a href="">
+                        <img src="Imagens/icons8-fiat-144.png" alt="" width="150px">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="imagens/icons8-mercedes-144.png" alt="" width="150px">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="Imagens/icons8-chevrolet-144.png" alt="" width="150px">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="Imagens/icons8-ford-144.png" alt="" width="150px">
+                    </a>
+                </li>
+            </ul>
+
+            <ul id="aba-direita2">
+                <li>
+                    <a href="">
+                        <img src="Imagens/icons8-mitsubishi-150.png" alt="" width="150px">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="imagens/icons8-peugeot-150.png" alt="" width="150px">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="Imagens/icons8-bmw-144.png" alt="" width="150px">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="Imagens/icons8-volkswagen-144.png" alt="" width="150px">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="clear"></div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<div id="footer-container clearfix">
+    <div id="footer">
+        <p>Todos os direitos reservados.</p>
+
+    </div>
+</div>
+
+</body>
+
+
+</html>
