@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lopu</title>
+
+  <link rel="stylesheet" href="estilos/anunciar.css">
+
+</head>
+
+<body>
+<div id="pagina">
+  <div id="navbar"> <!-- BARRA DE NAVEGAÇÃO -->
+
+    <div>
+      <a href="index.html">
+        <img id="logo" src="Imagens/logo.png" alt="" height="70px">
+      </a>
+    </div>
+
+    <ul class="centro">
+      <li><a href="visualizar.html">Visualizar</a></li>
+      <li><a href="index.html">Comprar</a></li>
+      <li><a href="anunciar.html">Anunciar</a></li>
+      <li><a href="ajuda.html">Ajuda</a></li>
+    </ul>
+
+    <ul class="direita">
+      <li><a href="Login.html">Login</a></li>
+      <li><a href="">Busca</a></li>
+    </ul>
+  </div>
+
+  <br><br><br>
+  <div class="container">
+    <h1>Anuncie aqui o seu carro</h1>
+    <form action="#" method="POST">
+      <label for="nome">Placa do Carro:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite a placa do carro" required>
+
+      <label for="marca">Marca:</label>
+      <input type="text" id="marca" name="marca" placeholder="Digite a marca do carro" required>
+
+      <label for="modelo">Modelo:</label>
+      <input type="text" id="modelo" name="modelo" placeholder="Digite o modelo do carro" required>
+
+      <label for="ano">Ano de Fabricação:</label>
+      <input type="number" id="ano" name="ano" placeholder="Digite o ano de fabricação" required>
+
+      <label for="km">Quilometragem (km):</label>
+      <input type="number" id="km" name="km" placeholder="Digite a quilometragem" required>
+
+      <label for="preco">Preço (R$):</label>
+      <input type="number" id="preco" name="preco" placeholder="Digite o preço do carro" required>
+
+      <label for="descricao">Descrição do Carro:</label>
+      <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva o carro" required></textarea>
+
+      <label for="imagem">Imagem do Carro:</label>
+      <input type="file" id="imagem" name="imagem" accept="image/*">
+
+      <button type="submit" class="btn-submit">Cadastrar Carro</button>
+    </form>
+  </div>
+</div>
